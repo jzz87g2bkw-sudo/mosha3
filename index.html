@@ -27,7 +27,9 @@
                         <a href="#function">機能紹介</a>
                     </li>
                 </ul>
-                <a href="#">ダウンロード資料</a><!--CTA-->
+                <div class="header-cta">
+                    <a href="#">ダウンロード資料</a><!--CTA-->
+                </div>
             </nav>
         </div>
     </div>
@@ -46,12 +48,18 @@
                     </h1><!--タグや画像の位置に悩んでる-->
                     <img src="./素材/mv_logo.svg" alt="黒ロゴ">
                     <div class="cta-flex">
-                        <a class="cotact-jump" href="#contact">お問い合せ</a>
-                        <a class="cta-btn" href="#">資料ダウンロード</a>
-                        <img src="./素材/mv_badge.webp" alt="実績No１">
+                        <div class="cotact-jump-btn">
+                            <a href="#contact">お問い合せ</a>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="#">資料ダウンロード</a>
+                        </div>
                     </div>
+                    <img class="no1" src="./素材/mv_badge.webp" alt="実績No１"> 
                 </div>
-                <img  class="hero-img" src="./素材/mv_img.webp"" alt="ヒーロー画像">
+                <div class="hero-right">
+                    <img src="./素材/mv_img.webp" alt="ヒーロー画像">
+                </div>
             </div>
             
         </div>
@@ -82,27 +90,99 @@
     </section>
     <!--ブロック４-->
     <section class="voice" id="voice"><!--お客様の声　スライド-->
-        <h2>お客様の声</h2>
-    </section>
-    <!--ブロック５-->
-    <section class="cta"><!--お問合せ誘導-->
         <div class="container">
-            <div class="cta-inner">
-                <img src="./素材/cta_img.webp" alt="バナー">
-                <div class="cta-text">
-                    <p>
-                        カスタマイズ対応する
-                    </p>
-                    <p><!--span？？-->
-                        クラウド型<br>
-                        ECサイト構築サービス
-                    </p>
-                    <img src="/素材/mv_logo.svg" alt="黒ロゴ大">
-                    <div class="cta-flex">
-                        <a class="cotact-jump" href="#contact">お問い合わせ</a>
-                        <a class="cta-btn" href="#">資料ダウンロード</a>
+            <h2 class="section-title">
+                お客様の声
+            </h2>
+            <div class="voice-list"><!--親-->
+                <div class="card"><!--子-->
+                    <div class="voice-image">
+                        <img src="./素材/voice_01.webp" alt="カード１">
+                    </div>
+                    <div class="card-bottom">
+                        <h3>
+                            株式会社ABC様
+                        </h3>
+                        <div class="card-text"><!--親-->
+                            <p class="card-text-left">
+                                ECサイトの<br>
+                                運用コストを
+                            </p>
+                            <p class="card-text-right">
+                                <span class="card-color">５０％</span><span class="card-large">削減</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="voice-image">
+                        <img class="voice-item" src="./素材/voice_02.webp" alt="カード２">
+                    </div>
+                    <div class="card-bottom">
+                        <h3>
+                            株式会社ジュラシック・パーク様
+                        </h3>
+                        <div class="card-text">
+                            <p class="card-text-left">
+                                <span class="card-large">受注性能が</span>
+                            </p>
+                            <p class="card-text-right">
+                                <span class="card-color">２倍</span><span class="card-large">に</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="voice-image">
+                        <img class="voice-item" src="./素材/voice_03.webp" alt="カード3">
+                    </div>
+                     <div class="card-bottom">
+                        <h3>
+                            株式会社モシャ様
+                        </h3>
+                        <div class="card-text">
+                            <p class="card-text-left">
+                                会社情報・<br>
+                                ポイント情報を<br>
+                                実店舗と
+                            </p>
+                            <p class="card-text-right">
+                                <span class="card-color">一元化</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--ブロック５-->
+    <section class="banner"><!--お問合せ誘導-->
+        <div class="container">
+            <div class="banner-inner">
+                <div class="banner-left">
+                    <img src="./素材/cta_img.webp" alt="バナー">
+                </div>
+                <div class="banner-right">
+                    <div class="banner-text">
+                        <p>
+                            カスタマイズ対応する<br>
+                        <span><!--span？？-->
+                            クラウド型<br>
+                            ECサイト構築サービス
+                        </span>
+                        <img src="./素材/mv_logo.svg" alt="黒ロゴ大">
+                        <div class="cta-flex">
+                            <div class="cotact-jump-btn">
+                                <a class="cotact-jump" href="#contact">お問い合わせ</a>
+                            </div>
+                            <div class="cta-btn">
+                                <a href="#">資料ダウンロード</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>
