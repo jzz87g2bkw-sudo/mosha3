@@ -12,7 +12,13 @@
     <div class="container">
         <div class="header-inner">
             <img src="./素材/logo.svg" alt="ヘッダーロゴ">
-            <nav>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
                 <ul>
                     <li>
                         <a href="#voice">お客様の声</a>
@@ -48,7 +54,7 @@
                     </h1><!--タグや画像の位置に悩んでる-->
                     <img src="./素材/mv_logo.svg" alt="黒ロゴ">
                     <div class="cta-flex">
-                        <div class="cotact-jump-btn">
+                        <div class="contact-jump-btn">
                             <a href="#contact">お問い合せ</a>
                         </div>
                         <div class="cta-btn">
@@ -68,9 +74,8 @@
     <section class="achievements"><!--構築実績-->
         <div class="container">
             <div class="achievements-text">
-                <p>中・大規模さまざまな業種業態に選ばれ<span>ECサイト構築実績</span></p>
-                <img src="./素材/txt_800.svg" alt="８００">
-                <p>サイト</p>
+                <p class="achievements-text-sp" >中・大規模さまざまな業種業態に選ばれ</p><span>ECサイト構築実績</span>
+                <img src="./素材/txt_800.svg" alt="８００"><p>サイト</p>
             </div>
             <div class="achievements-grid">
                 <img src="./素材/business_logo01.webp" alt="企業１">
@@ -174,8 +179,8 @@
                         </span>
                         <img src="./素材/mv_logo.svg" alt="黒ロゴ大">
                         <div class="cta-flex">
-                            <div class="cotact-jump-btn">
-                                <a class="cotact-jump" href="#contact">お問い合わせ</a>
+                            <div class="contact-jump-btn">
+                                <a class="contact-jump" href="#contact">お問い合わせ</a>
                             </div>
                             <div class="cta-btn">
                                 <a href="#">資料ダウンロード</a>
@@ -192,17 +197,21 @@
             <h2 class="section-title">
                 EBISUMARTが選ばれる３つの理由
             </h2>
-            <p>
+            <p class="section-lead">
                 ８００サイト以上の構築には理由があります
             </p>
-            <div class="reason-innre">
-                <p>０１</p><!--pにしてみたけど不安-->
-                <h3>売上をあへるための豊富な機能</h3>
+            <div class="title-line"></div>
+            <div class="reason-inner">
+                <div class="reason-title">
+                    <span class="reason-number">01</span>
+                    <h3>売上を上げるための豊富な機能</h3>
+                </div>
                 <div class="reason-flex">
                     <img src="./素材/reason_01_01.webp" alt="理由１−１">
                     <div class="reason-text"><!--子にするための箱-->
                         <h4>機能をフルオーダーカスタマイズ</h4><!--h４にしてみたけど不安-->
-                        <p><span class="reason-accent">サイトをより使いやすくするユーザビリティの向上</span>や<span class="reason-accent">ユーザーの購入率を高めるコンバージョン率改善</span>のためのフルオーダーカスタマイズが可能。<br>
+                        <p><span class="reason-accent">サイトをより使いやすくするユーザビリティの向上</span>や<br>
+                            <span class="reason-accent">ユーザーの購入率を高めるコンバージョン率改善</span>のためのフルオーダーカスタマイズが可能。<br>
                         ご要望に合わせて柔軟に対応します</p>
                     </div>
                     
@@ -223,13 +232,15 @@
                         <h4>継続的な無料アップデート</h4>
                         <p>年間機能追加数は107回。<br>
                             マーケットの顧客のニーズを迅速に反映し取りこぼしを防ぎます。<br>
-                            最新のクリエイティブ表現で急激な変化に伴うスマホ・レスポンシブ対応を実現。
+                            最新のクリエイティブ表現で急激な変化に伴うスマホ・レスポンシブ対応を実現。</p>
                     </div>
                 </div>
             </div>
-            <div class="reason-innre">
-                <p>０２</p>
-                <h3>業務効率を改善するための豊富な機能</h3>
+            <div class="reason-inner">
+                <div class="reason-title">
+                    <span class="reason-number">02</span>
+                    <h3>業務効率を改善するための豊富な機能</h3>
+                </div>
                 <div class="reason-flex">
                     <img src="./素材/reason_02_01.webp" alt="理由２−１">
                     <div class="reason-text">
@@ -256,9 +267,11 @@
                     </div>    
                 </div>
             </div>
-            <div class="reason-innre">
-                <p>０3</p>
-                <h3>万全なセキュリティ対策</h3>
+            <div class="reason-inner">
+                <div class="reason-title">
+                    <span class="reason-number">03</span>
+                    <h3>万全なセキュリティ対策</h3>
+                </div>
                 <div class="reason-flex">
                     <img src="./素材/reason_03_01.webp" alt="理由３">
                     <div class="reason-text">
@@ -268,6 +281,7 @@
                             例えば、セキュリティー基準の高いC社の基準を満たす事で、EBISUMART全体のセキュリティー基準が向上します。</p>
                     </div>    
                 </div>
+            </div>
     </section>
     <!--ブロック７-->
     <section class="feature"><!--機能開発-->
@@ -276,38 +290,41 @@
                 <h2 class="section-title">
                     機能開発は無限大
                 </h2>
-                <div class="feature-grid1-item"><!--カードとアイテムで悩んだ-->
-                    <img src="./素材/support_img01.svg" alt="開発１">
-                    <p>会員ステージ管理</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img01.svg" alt="開発２">
-                    <p>リアルタイム在庫状況</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img02.svg" alt="開発３">
-                    <p>ライブコマース<br>
-                    ショート動画埋め込み</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img03.svg" alt="開発４">
-                    <p>チャットサポート</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img04.svg" alt="開発５">
-                    <p>レポート、分析機能</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img05.svg" alt="開発６">
-                    <p>クーポン機能</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img06.svg" alt="開発７">
-                    <p>定期購入オプション</p>
-                </div>
-                <div class="feature-grid1-item">
-                    <img src="./素材/support_img08.svg" alt="開発８">
-                    <p>請求、支払い効率化</p>
+                <div class="title-line"></div>
+                <div class="feature-grid1">
+                    <div class="feature-grid1-item"><!--カードとアイテムで悩んだ-->
+                        <img src="./素材/support_img01.svg" alt="開発１">
+                        <p>会員ステージ管理</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img01.svg" alt="開発２">
+                        <p>リアルタイム在庫状況</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img02.svg" alt="開発３">
+                        <p>ライブコマース<br>
+                        ショート動画埋め込み</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img03.svg" alt="開発４">
+                        <p>チャットサポート</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img04.svg" alt="開発５">
+                        <p>レポート、分析機能</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img05.svg" alt="開発６">
+                        <p>クーポン機能</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img06.svg" alt="開発７">
+                        <p>定期購入オプション</p>
+                    </div>
+                    <div class="feature-grid1-item">
+                        <img src="./素材/support_img08.svg" alt="開発８">
+                        <p>請求、支払い効率化</p>
+                    </div>
                 </div>
             </div>
             <div class="feature-grid-inner grid-shadw" >
@@ -361,8 +378,8 @@
                         <img src="./素材/gaibu_img02.webp" alt="外部１５">
                     </div>
                 </div>
-                <p>ほか、多数</p>
-            </div>
+                <p class="text-right">ほか、多数</p>
+            </div> 
         </div>
     </section>
     <!--ブロック８-->
@@ -371,15 +388,18 @@
             <h2 class="section-title">
                 導入効果
             </h2>
-            <p>
+            <p class="section-lead">
                 ECシステムの乗り換えでECサイトの売り上げがアップする？！
             </p>
+            <div class="title-line"></div>
             <div class="effect-flex">
-                <img src="./素材/effect_img.webp" alt="導入効果">
-                <div class="effect-text"><!--子の箱-->
-                    <p>EBISUMART 導入企業の売上は</p>
-                    <p><span class="effect-accent">３９７％</span>UP↑</p>
-                    <p>前年比</p><!--p３つで良いのか悩んだ　フォントの感じが変わる部分にとりあえずpかspanを入れてみた-->
+                <div class="effect-left">
+                    <img src="./素材/effect_img.webp" alt="導入効果">
+                </div>
+                <div class="effect-text effect-right"><!--子の箱-->
+                    <p class="effect-bold">EBISUMART 導入企業の売上は</p>
+                    <p class="effect-bold"><span class="effect-accent">３９７％UP↑</span>（前年比）</p><!--p３つで良いのか悩んだ　フォントの感じが変わる部分にとりあえずpかspanを入れてみた-->
+                    
                     <p>ECシステムの乗り換えでECの売上アップを実現しませんか？<br>
                         中・大規模のさまざまな業種業態に選ばれているEBISUMARTでECサイトを構築した企業は、売上前年比397％を達成。<br>
                         サイトリニューアルから1年以上が経過した企業も売上を伸ばしています。<br>
@@ -390,9 +410,35 @@
             </div>
         </div>
     </section>
-    <!--ブロック９-->
-    <section class="cta"><!--お問い合せ誘導-->
+    <!--ブロック９--><!--お問い合せ誘導-->
         <!--ブロック５と同じだから完成後にコピペする-->
+    <section class="banner"><!--お問合せ誘導-->
+        <div class="container">
+            <div class="banner-inner">
+                <div class="banner-left">
+                    <img src="./素材/cta_img.webp" alt="バナー">
+                </div>
+                <div class="banner-right">
+                    <div class="banner-text">
+                        <p>
+                            カスタマイズ対応する<br>
+                        <span><!--span？？-->
+                            クラウド型<br>
+                            ECサイト構築サービス
+                        </span>
+                        <img src="./素材/mv_logo.svg" alt="黒ロゴ大">
+                        <div class="cta-flex">
+                            <div class="contact-jump-btn">
+                                <a class="contact-jump" href="#contact">お問い合わせ</a>
+                            </div>
+                            <div class="cta-btn">
+                                <a href="#">資料ダウンロード</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
     </section>
     <!--ブロック１０-->
     <section class="function" id="function"><!--詳細機能-->
@@ -400,30 +446,39 @@
             <h2 class="section-title">
                 詳細機能紹介
             </h2>
-            <div class="function-grid grid-shadw" ><!--グリッド２つの場合のこのタグの場所が不安-->
+            <div class="title-line"></div>
+            <div class="function-grid" ><!--グリッド２つの場合のこのタグの場所が不安-->
                 <div class="function-grid-top">
                     <!--aで囲むか、ここにもう一つ、グリッドの中身用のdivがあった方が良いのか悩んだ-->
-                    <a href="#">
-                        <img src="./素材/i_01.svg" alt="グリッド上１">
-                        <h3>BtoC向けECサイト</h3>
-                        <p>トレンドに沿った機能が充実<br>
-                        独自機能やオプションの追加開発</p>                        
+                    <a class="function-grid-item function-flex" href="#">
+                        <div class="function-flex-left">
+                            <img src="./素材/i_01.svg" alt="グリッド上１">
+                        </div>
+                        <div class="function-flex-right">
+                            <h3>BtoC向けECサイト</h3>
+                            <p>トレンドに沿った機能が充実<br>
+                            独自機能やオプションの追加開発</p> 
+                        </div>                       
                     </a>
                     
-                    <a href="#">
-                        <img src="./素材/i_02.svg" alt="グリッド上２">
-                        <h3>BtoB向けECサイト</h3>
-                        <p>企業間取引の受発注業務を効率化<br>
-                            手作業による煩雑な業務の<br>
-                            デジタル化
-                        </p>
+                    <a class="function-grid-item function-flex" href="#">
+                        <div class="function-flex-left">
+                            <img src="./素材/i_02.svg" alt="グリッド上２">
+                        </div>
+                        <div class="function-flex-right">
+                            <h3>BtoB向けECサイト</h3>
+                            <p>企業間取引の受発注業務を効率化<br>
+                                手作業による煩雑な業務の<br>
+                                デジタル化
+                            </p>
+                        </div>
                         
                     </a>
                 </div>
-            </div>
-            <div class="function-grid-under">
+            
+                <div class="function-grid-under">
                 <!--a をdiv で囲む？クラス名が思いつかない-->
-                    <a href="#">
+                    <a class="function-grid-item under-item" href="#">
                         <img src="./素材/i_03.svg" alt="グリッド下１">
                         <h3>新規ECサイト<br>
                             構築
@@ -431,7 +486,7 @@
                         <p>豊富な機能やオプションでカスタマイズをせずスピーディーにECサイトを構築</p>
                     </a>
 
-                    <a href="#">
+                    <a class="function-grid-item under-item" href="#">
                         <img src="./素材/i_04.svg" alt="グリッド下２">
                         <h3>既存ECサイト<br>
                             リプレース
@@ -439,7 +494,7 @@
                         <p>既存システムの引き継ぎ連携はもちろん、新規システムとの連携も可能</p>
                     </a>
 
-                    <a href="#">
+                    <a class="function-grid-item under-item" href="#">
                         <img src="./素材/i_05.svg" alt="グリッド下３">
                         <h3>オムニチャンネル<br>
                             導入
@@ -447,7 +502,7 @@
                         <p>店舗やスマートフォンアプリなど、複数の販売チャンネルの顧客データを一元化</p>
                     </a>
 
-                    <a href="#">
+                    <a class="function-grid-item under-item" href="#">
                         <img src="./素材/i_06.svg" alt="グリッド下４">
                         <h3>モール型<br>
                             ECサイト構築
@@ -455,7 +510,7 @@
                         <p>マーケットプレイス型とモール型のどちらにも柔軟に対応</p>
                     </a>
 
-                    <a href="#">
+                    <a class="function-grid-item under-item" href="#">
                         <img src="./素材/i_07.svg" alt="グリッド下５">
                         <h3>マルチドメイン<br>
                             ECサイト構築
@@ -463,14 +518,14 @@
                         <p>複数ブランドの展開や、複数のECサイトを一つのシステムに統合したECサイトを構築</p>
                     </a>
 
-                    <a href="#">
+                    <a class="function-grid-item under-item" href="#">
                         <img src="./素材/i_08.svg" alt="グリッド下６">
                         <h3>ふるさと納税<br>
                             サイト構築
                         </h3>
                         <p>単独のふるさと納税ECサイトから複数の自治体をまたぐモール系のような大規模なECサイトまでを構築</p>
                     </a>
-            </div>
+                </div>
         </div>
     </section>
     <!--ブロック１１-->
@@ -479,95 +534,101 @@
             <h2 class="section-title">
                 お問い合わせ
             </h2>
-            <p>以下のフォームに情報を入力の上、お問い合わせをお願いいたします。<br>
+            <p class="section-lead">
+                以下のフォームに情報を入力の上、お問い合わせをお願いいたします。<br>
                 3営業日以内に担当者よりご返信いたします。</p>
+            
+            <div class="title-line"></div>
             <form class="contact-form"><!--アンダーバーの意味は何？-->
                 <div class="form-group">
-                    <label>会社名
+                    <div class="form-label">
+                        <label>会社名</label>
                         <span class="required">必須</span><!--requiredの意味って何？-->
-                    </label>
-                    <p class="contact-note">
-                        ※会社・組織に属さない方は「個人」とお書きください
-                    </p>
-                    <input type="text" placeholder="例）株式会社エビスマート">
+                        <p class="contact-note">
+                            ※会社・組織に属さない方は「個人」とお書きください
+                        </p>
+                    </div>
+                    <input class="text" type="text" placeholder="例）株式会社エビスマート">
                 </div>
                 <div class="form-group">
-                    <label>氏名
-                        <span class="required">必須</span>
-                    </label>
-                    <p class="contact-note">
+                    <div class="form-label">
+                        <label>氏名</label>
+                        <span class="required">必須</span>     
+                        <p class="contact-note">
 
-                    </p>
+                        </p>
+                    </div>
                     <div class="form-row">
-                        <input type="text" placeholder="例）山田">
-                        <input type="text" placeholder="例）太郎">
+                        <input class="text row-text" type="text" placeholder="例）山田">
+                        <input class="text row-text" type="text" placeholder="例）太郎">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>メールアドレス
+                    <div class="form-label">
+                        <label>メールアドレス</label>
                         <span class="required">必須</span>
-                    </label>
-                    <p class="contact-note">
-                        ※半角数字で入力してください
-                    </p>
-                    <input type="text" placeholder="exampke@co.jp">
+                        <p class="contact-note">
+                            ※半角数字で入力してください
+                        </p>
+                    </div>
+                    <input class="text" type="text" placeholder="exampke@co.jp">
                 </div>
                 <div class="form-group">
-                    <label>電話番号
+                    <div class="form-label">
+                        <label>電話番号</label>
                         <span class="required">必須</span>
-                    </label>
-                    <p class="contact-note">
-                        ※繋がりやすい番号をご記載ください
-                    </p>
-                    <input type="text" placeholder="00000000000※ハイフン不要">
+                        <p class="contact-note">
+                            ※繋がりやすい番号をご記載ください
+                        </p>
+                    </div>
+                    <input class="text" type="text" placeholder="00000000000※ハイフン不要">
                 </div>
-
                 <div class="form-group">
-                    <label>お問合せ要件
+                    <div class="form-label">
+                        <label>お問合せ要件</label>
                         <span class="required">必須</span>
-                    </label>
-                    <p class="contact-note">
-                        
-                    </p>
-                    <label>
-                    <input type="checkbox" name="type">
-                    資料請求
-                    </label>
-                    <label>
-                    <input type="checkbox" name="type">
-                    打ち合わせ・デモ希望
-                    </label>
-                    <label>
-                    <input type="checkbox" name="type">
-                    非公開導入事例の参照
-                    </label>
-                    <label>
-                    <input type="checkbox" name="type">
-                    その他
-                    </label>
+                        <p class="contact-note">
+                            
+                        </p>
+                    </div>
+                    <div class="checkbox-list">
+                        <label class="checkbox-label">
+                        <input type="checkbox" name="type">
+                        資料請求
+                        </label>
+                        <label class="checkbox-label">
+                        <input type="checkbox" name="type">
+                        打ち合わせ・デモ希望
+                        </label>
+                        <label class="checkbox-label">
+                        <input type="checkbox" name="type">
+                        非公開導入事例の参照
+                        </label>
+                        <label class="checkbox-label">
+                        <input type="checkbox" name="type">
+                        その他
+                        </label>
+                    </div>
                 </div>
-
-
-
                 <div class="form-group">
-                    <label>お問い合わせ内容(1000字以内)
-                        <span class="required-2">任意</span>
-                    </label>
-                    <p class="contact-note">
+                    <div class="form-label">
+                        <label>お問い合わせ内容(1000字以内)
+                            <span class="required-2">任意</span>
+                        </label>
+                        <p class="contact-note">
 
-                    </p>
-                    <textarea placeholder="お困りごとやご相談などをお聞かせください。"><!--ホルダー内に入れるのは違うやつ使う？-->
-
-                    </textarea>
+                        </p>
+                    </div>
+                    <textarea placeholder="お困りごとやご相談などをお聞かせください。"></textarea>
                 </div>
                 
                 <label class="privacy">
                     <input type="checkbox" name="privacy"><!--nameを他のものと同じにして良いのか不安-->
-                    「<span>個人情報の取り扱いに関する確認事項</span>」に同意する
-                    </label>
+                    「<a class="privacy-link" href="#">個人情報の取り扱いに関する確認事項</a>」に同意する
+                </label>
                 
                 <button type="submit" class="btn">
-                    送信
+                    送信する
                 </button>
             </form>
         </div>
@@ -575,19 +636,14 @@
       
 </main>
 <!--フッター-->
-<footer>
-    <img src="" alt="フッターロゴ">
+<footer class="footer">
+    <img src="./素材/logo_white (1).svg" alt="フッターロゴ">
     <p><small>©2022 Interfactory,inc.</small></p>   
 </footer>
+<script src="script.js"></script>
 </body>
-
 
 </html>
 
-
-
-<h2 class="section-title">
-  <p>以下のフォームに情報を入力</p>
-</h2>
 
 
